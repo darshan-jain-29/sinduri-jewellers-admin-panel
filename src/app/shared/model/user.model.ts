@@ -1,10 +1,12 @@
-import {Id} from './common.model';
+import { Id } from './common.model';
 
 export class UserModel implements Id {
   public id?: string;
   public uid: string;
   public displayName?: string;
   public email: string;
+  public villageName: string;
+  public phoneNumber: string;
   public photoURL: string;
   public registerDate: string;
   public lastDate: string;
@@ -15,6 +17,8 @@ export class UserModel implements Id {
     this.uid = model.uid;
     this.displayName = model.displayName;
     this.email = model.email;
+    this.villageName = model.villageName;
+    this.phoneNumber = model.phoneNumber;
     this.photoURL = model.photoURL;
     this.lastDate = model.lastDate;
     this.registerDate = model.registerDate;
