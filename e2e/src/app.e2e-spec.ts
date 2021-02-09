@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('backend-app app is running!');
+    expect(page.getTitleText()).toEqual('sindhuri-jewellers-admin-panel app is running!');
   });
 
   afterEach(async () => {

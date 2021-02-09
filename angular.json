@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "backend-app": {
+    "sindhuri-jewellers-admin-panel": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/backend-app",
+            "outputPath": "dist/sindhuri-jewellers-admin-panel",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,7 +59,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "backend-app:build"
+            "browserTarget": "sindhuri-jewellers-admin-panel:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "backend-app:build:production"
+              "browserTarget": "sindhuri-jewellers-admin-panel:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "backend-app:build"
+            "browserTarget": "sindhuri-jewellers-admin-panel:build"
           }
         },
         "test": {
@@ -121,16 +121,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "backend-app:serve"
+            "devServerTarget": "sindhuri-jewellers-admin-panel:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "backend-app:serve:production"
+              "devServerTarget": "sindhuri-jewellers-admin-panel:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "backend-app"
+  "defaultProject": "sindhuri-jewellers-admin-panel"
 }
